@@ -11,3 +11,9 @@ doubleArray([1,2,3]) // [1,2,3,1,2,3]
 
 console.log ('');
 console.log ('6 задание');
+
+function doubleArray (arr) {
+    return arr.concat(...arr)
+
+}
+console.log (doubleArray ([1,2,3]));
