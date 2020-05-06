@@ -26,15 +26,22 @@ const user8 = {
     hobby: 'html',
     premium: true,
   };
-
-
-  user8.mood = 'happy';
-  user8.hobby = 'skydiving';
-  user8.premium = false;
  
-  var obj = { 'France': 'Paris', 'England': 'London' };
-// Iterate over the property names:
+function skript () {
+  if (user8.mood == '') user8.mood = 'happy';
+   else user8.mood = 'happy';
+
+  if (user8.hobby == 'html') 
+      user8.hobby = 'skydiving';
+
+  if (user8.premium == true) 
+      user8.premium = false;
+  
+ 
+
 for (let inz of Object.keys(user8)) {
-    var capital = user8[inz];
+    let capital = user8[inz];
     console.log(inz, capital);
 }
+}
+skript ();
