@@ -14,20 +14,31 @@ funcGetUsers(users, “gender”, “male”); // [ {name: “Denis”, age: “
 console.log ('');
 console.log ('8 задание');
 
-let obj8t = [ {name: 'Denis', age: '29', gender: 'male'} , 
-              {name: 'Ivan', age: '20', gender: 'male'} ];
+let obj8t = [ {name: 'Denis', age: '29', gender: '444'} , 
+              {name: '6767', age: '20', gender: 'male'} ,
+              {name: '444', age: '20', gender: '444'} ,
+              {name: '557855', age: '20', gender: 'male'} , ];
 
-newObj8t = [];
+newobj8t =[];
 
-function funcGetUsers (obj, kay, znach) {
-  
-    for (let i = 0; i<=obj.length; i++ ) {
 
-        
 
-    } 
-    console.log(newObj8t);
-}
+function tt11 (obj, key, znach) {
+   
+    for (i=0; i<=obj.length-1; i++){
+
+        let keysys = Object.keys(obj[i]);
+        let maleee = Object.values(obj[i]);
+       
+            if (keysys.indexOf (key)>0 && maleee.indexOf (znach)>0) {
+                newobj8t.push (obj[i])
+            } 
+    }
     
+    console.log(newobj8t);
+    
+}
 
-funcGetUsers (obj8t, 'gender', 'male');
+tt11 (obj8t, 'gender', 'male');
+
+
