@@ -17,7 +17,7 @@ console.log ('8 задание');
 let obj8t = [ {name: 'Denis', age: '29', gender: '444'} , 
               {name: '6767', age: '20', gender: 'male'} ,
               {name: '444', age: '20', gender: '444'} ,
-              {name: '557855', age: '20', gender: 'male'} , ];
+              {name: '557855', age: '20', gender: 'male'} ];
 
 newobj8t =[];
 
